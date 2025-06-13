@@ -27,7 +27,7 @@ exec nm-applet
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /home/pebble/voidwall.png fill
+output * bg ~/voidwall.png fill
 #
 # Example configuration:
 #
