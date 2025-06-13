@@ -39,6 +39,10 @@ install() {
   cp swa.sh /home/$usr/
   cp voidwall.png /home/$usr/
 
+  chmod +x /home/$usr/swa.sh
+
+  echo "$usr ALL=(ALL) ALL" >> /etc/sudoers
   echo "$usr ALL=(root) NOPASSWD: /usr/bin/brightnessctl *" >> /etc/sudoers
+  echo "sudo chown -R $(whoami):$(whoami) ~/.config
 }
 menu
