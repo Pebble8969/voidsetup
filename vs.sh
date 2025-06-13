@@ -43,6 +43,7 @@ install() {
 
   echo "$usr ALL=(ALL) ALL" >> /etc/sudoers
   echo "$usr ALL=(root) NOPASSWD: /usr/bin/brightnessctl *" >> /etc/sudoers
-  echo "sudo chown -R $(whoami):$(whoami) ~/.config
+  echo "sudo chown -R $(whoami):$(whoami) ~/.config" >> /home/$usr/confowner.sh
+  chmod +x /home/$usr/confowner.sh
 }
 menu
